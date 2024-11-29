@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="userProfile.css">
+    <script src="userProfile.js" defer></script>
+</head>
+<body>
+<div class="toolbar">
+    <div class="logged-info">Logged in as: <span id="user-email"></span></div>
+    <div class="links">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="chat.html">Chat</a>
+        <button id="logout">Logout</button>
+    </div>
+</div>
+
+<div class="profileContainer">
+    <div class="profile-header">
+        <div class="image">
+            <img src="https://t4.ftcdn.net/jpg/00/97/58/97/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg" alt="" id="profileImage">
+        </div>
+        <button id="change-image-btn">Change Image</button>
+    </div>
+    <div class="change-password">
+        <h3>Change Password</h3>
+        <input type="password" id="old-password" placeholder="Enter Old Password">
+        <input type="password" id="new-password" placeholder="Enter New Password">
+        <input type="password" id="confirm-password" placeholder="Confirm New Password">
+        <button id="change-password-btn">Change Password</button>
+        <div class="error-message" id="error-msg"></div>
+    </div>
+</div>
+</body>
+</html>
